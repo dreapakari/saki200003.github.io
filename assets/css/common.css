@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+main{
+  position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  color: #293a42; /* RGB */
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+  font-family: Zen Kaku Gothic New;
+  font-weight: 500;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin-top: 50px;
+    padding: 0px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+}
+
+
+@media(max-width:800px){
+  .openbtn{
+    /*ボタン内側の基点となるためrelativeを指定。
+  追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  top: -7px;
+  right: 40px;
+  z-index: 9999;
+  }
+
+  /*ボタン内側*/
+  .openbtn span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 3px;
+      border-radius: 2px;
+    background: #333;
+      width: 45%;
+    }
+
+  .openbtn span:nth-of-type(1) {
+    top:15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top:23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top:31px;
+  }
+
+  /*activeクラスが付与されると線が回転して×に*/
+
+  .openbtn.active span:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;/*真ん中の線は透過*/
+  }
+
+  .openbtn.active span:nth-of-type(3){
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+  }
+
+  #g-nav {
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      right: -100%;
+      width: 60%;
+      height: 100vh;
+      transition: all 0.6s;
+      background-color: #e3f3f5;
+  }
+  #g-nav ul {
+    text-align: left;
+    position: absolute;
+    z-index: 999;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: block;
+    line-height: 50px;
+  }
+  #g-nav li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  #g-nav li a {
+      color: #2a1500;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      transition: all .5s;
+  }
+  #g-nav.panelactive {
+      right: 0;
+  }
+  header img{
+    width: 60%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+header img{
+  margin: 0; padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #293a42;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-shadow: rgba(184, 209, 215,0.18) 1px 0 10px;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 24px;
+}
+
+@media(max-width:800px){
+  .g-nav-list a{
+    font-size:24px;
+  }
+  .g-nav-list2 a{
+    font-size: 16px;
+  }
+}
+
+
+
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+.main-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('i') top center / cover no-repeat;
+}
+
+footer  {
+  width: 100%;
+    padding: 60px 6% 30px;
+    display: flex;
+    align-items: center;
+    font-family: Zen Kaku Gothic New;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+
+.card-box {
+  width:200px;
+}
+
+  .card-box .card {
+      padding:10px;
+      cursor:pointer;
+  }
+
+      .card-box .card p.image {
+          margin:-10px -10px 0;
+      }
+
+          .card-box .card p.image img {
+              vertical-align:top;
+          }
+
+      .card-box .card p.text {
+          margin:10px 0 0;
+      }
+
+
+
+
+.card-box .card:hover {
+  animation:shake 2.0s steps(1, end) infinite;
+}
+
+@keyframes shake {
+  0%   { transform:rotate(0); }
+  16%  { transform:rotate(12deg); }
+  32%  { transform:rotate(-10deg); }
+  48%  { transform:rotate(8deg); }
+  64%  { transform:rotate(-6deg); }
+  80%  { transform:rotate(4deg); }
+  96%  { transform:rotate(-2deg); }
+  100% { transform:rotate(0deg); }
+}
+
+
+
+@media(max-width:600px){
+  .footer__logo img{
+    width: 70%;
+  }
+  #g-nav-list_footer{
+    display:none;
+  }
+  .g-nav-list2_sp{
+    margin-top: 0;
+  }
+  .footer_sp{
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,660 @@
+body {
+    background-color: #f5fafb;
+}
+
+
+
+
+
+
+
+.about_top {
+    margin-top: 250px;
+    margin-left: 20px;
+
+}
+main{
+    background-image: url(../images/en1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 300px;
+}
+
+
+@media(max-width:800px) {
+    .about_top {
+        margin-top: 160px;
+    }
+}
+@media(max-width:600px){
+    .about_top{
+        width: 200%;
+    }
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+.section1 img {
+    margin-right: 90px;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@media(max-width:800px) {
+    .section1 img {
+        width: 40%;
+    }
+}
+@media(max-width:400px){
+    .section1 img{
+        width: 70%;
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+}
+
+.about_profire2 {
+    text-align: left;
+}
+
+.about_profire2 h1 {
+    font-size: 60px;
+    color: #82c4d2;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 60px;
+}
+
+.about_profire2 h2 {
+    font-size: 30px;
+    margin-top: 68px;
+    font-weight: 500;
+}
+
+.about_sentense {
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+@media(max-width:750px) {
+    .about_profire2 h1 {
+        font-size: 40px;
+    }
+
+    .about_profire2 h2 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .about_sentense {
+        font-size: 18px;
+    }
+}
+
+
+.section2 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+    max-width: 1010px;
+    margin: 180px auto;
+}
+
+.section2 p {
+    padding: 0;
+    text-align: left;
+    line-height: normal;
+    margin: 40px 60px 40px 56px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section2 h1 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+@media(max-width:800px){
+    .section2{
+        margin: 100px 10px;
+    }
+    .section2 h1{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .section2 p {
+        font-size: 14px;
+        margin: 20px 30px
+    }
+}
+
+
+article{
+    background-image: url(../images/en2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 200px;
+}
+
+
+
+.kikkake_about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kikkake_about_sentense {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 100px;
+}
+
+.kikkake_about_sentense h2 {
+    font-size: 30px;
+    line-height: normal;
+}
+
+.kikkake_about_sentense p {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+.aaaaa{
+    display: flex;
+    margin: 20px ;
+}
+@media(max-width:900px){
+    .kikkake_about{
+        flex-direction: column-reverse;
+    }
+    .hair_arengi{
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:600px) {
+    .kikkake_about_sentense h2 {
+        font-size: 18px;
+    }
+
+    .kikkake_about_sentense p {
+        font-size: 14px;
+    }
+    .kikkake_about_sentense {
+        margin: 30px 20px;
+    }
+
+}
+@media(max-width:400px){
+    .aaaaa{
+        margin: 80px auto;
+    }
+    .hair_arengi img{
+        width: 60%;
+    }
+}
+
+.kawaikunaritai_about {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.kawaikunaritai_about_sentense {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 100px;
+}
+
+.kawaikunaritai_about h2 {
+    font-size: 30px;
+    line-height: normal;
+}
+
+.kawaikunaritai_about p {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+.kamiatumeru {
+    padding-left: 160px;
+    padding-right: 50px
+}
+.kawaikunaritai_sentense_block{
+    display: flex;
+}
+
+@media(max-width:600px) {
+    .kawaikunaritai_about_sentense h2 {
+        font-size: 18px;
+    }
+
+    .kawaikunaritai_about_sentense p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .kawaikunaritai_about_sentense {
+        margin: 20px;
+    }
+}
+
+@media(max-width:1000px) {
+    .kawaikunaritai_about {
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    .kawaikunaritai_sentense_block img{
+        margin-left: 20px;
+    }
+}
+
+
+.en3{
+    background-image: url(../images/en4.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 300px;
+}
+.sodaterucolor_about {
+    position: relative;
+}
+
+
+.bgRd{
+    position: absolute;
+    background-image: url(../images/en3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+
+
+.sodaterucolor_about_sentense {
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 25px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.sodaterucolor_about h2 {
+    font-size: 30px;
+    line-height: normal;
+}
+
+.sodaterucolor_about p {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+.sodaterucolor_sentense {
+    padding-left: 25px;
+}
+
+
+.sodaterucolor_img {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+.sodaterucolor_img_2{
+    display: flex;
+    gap:56px;
+}
+
+
+.box{
+	opacity: 0;
+}
+
+/*==================================================
+動かしたい動き（今回は” ふわっ” を採用）
+===================================*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:2.0s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+	transform: translateY(100px);
+}
+
+to {
+    opacity: 1;
+	transform: translateY(0);
+}
+}
+
+
+
+@media(max-width:800px){
+    .sodaterucolor_sentense{
+        padding-left: 10px;
+    }
+}
+
+.img1 {
+    padding-top: 100px;
+    width:80%
+}
+
+.img2 {
+    padding-top: 240px;
+    width:80%
+}
+
+.img3 {
+    padding-top: 100px;
+    width:80%
+}
+
+.img4 {
+    padding-top: 240px;
+    width:80%;
+}
+.sodaterucolor_img {
+    flex-wrap: wrap;
+
+}
+
+
+@media(max-width:800px){
+    .sodaterucolor_about_sentense{
+        margin: 200px 20px 0px;
+        padding-left: 10px;
+    }
+    .img2{
+        padding-top: 200px;
+    }
+    .img3{
+        padding-top: 0;
+    }
+    .img4{
+        padding-top: 150px;
+    }
+}
+
+
+
+@media(max-width:600px) {
+    .sodaterucolor_about h2 {
+        font-size: 18px;
+    }
+
+    .sodaterucolor_about p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .sodaterucolor_img img{
+        width: 100%;
+    }
+
+}
+
+
+.tokuinakoto_about {
+    background: #e3f3f5;
+    margin: 130px 100px 100px;
+    border-radius: 20px;
+
+}
+
+.tokuinakoto_about h2 {
+    font-size: 30px;
+    padding-top: 90px;
+}
+
+.tokuinakoto_about p {
+    font-size: 24px;
+    padding: 56px;
+    line-height: 80px;
+}
+@media(max-width:800px){
+    .tokuinakoto_about{
+    margin: 100px 20px;
+}
+.tokuinakoto_about h2 {
+    font-size: 18px;
+    padding-top: 60px;
+}
+.tokuinakoto_about p{
+    font-size: 14px;
+    padding: 26px;
+    line-height: 50px;
+}
+    }
+
+
+
+
+
+
+.sukinakoto {
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 100px;
+}
+
+.renkun_sukinakoto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 130px;
+    flex-wrap: wrap;
+}
+
+.renkun_sukinakoto h1 {
+    font-size: 30px;
+}
+
+.renkun_sukinakoto p {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: normal;
+}
+
+.renkun_sentense {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.chikawa_sukinakoto {
+    text-align: right;
+    margin: 100px 12% 0 0;
+}
+
+.trip_sukinakoto {
+    margin-top: -100px;
+}
+
+
+
+.sukinakoto_yattemitai_div{
+    background-image: url(../images/en4.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 1180px;
+}
+
+
+.yattemitai {
+    text-align: left;
+    margin-top: 80px;
+    padding-left: 100px;
+}
+
+.live_yattemitai {
+    text-align: left;
+    margin: 100px 0 0 12%;
+}
+
+.kunitting_yattemitai {
+    margin-top: -100px;
+    margin-right: 5%;
+}
+
+.gosyuin_yattemitai {
+    text-align: right;
+    margin-right: 17%;
+    margin-top: -100px;
+}
+.gosyuin_yattemitai p{
+    margin-top: -80px;
+    margin-right: 50px;
+}
+
+@media(max-width:1000px) {
+    .renkun_sukinakoto {
+        justify-content: left;
+    }
+
+    .renkun_sukinakoto img {
+        width: 70%;
+    }
+
+    .renkun_sentense {
+        margin-top: 20px;
+    }
+
+    .chikawa_sukinakoto img,
+    .trip_sukinakoto img  ,.live_yattemitai img ,
+    .kunitting_yattemitai img ,
+    .gosyuin_yattemitai img{
+        width: 30%;
+    }
+
+    .trip_sukinakoto {
+        margin-top: 60px;
+        text-align: left;
+        margin-left: 50px
+    }
+
+    .live_yattemitai p ,.gosyuin_yattemitai p {
+        font-size: 14px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .gosyuin_yattemitai{
+        text-align: right;
+       margin: 50px 12% 0 0;
+    }
+    .live_yattemitai{
+        text-align: right;
+       margin: 50px 12% 0 0;
+    }
+    .kunitting_yattemitai{
+        margin-top: 60px;
+    text-align: left;
+    margin-left: 50px;
+    }
+}
+
+
+
+
+
+@media(max-width:800px) {
+    .sukinakoto ,.yattemitai {
+        padding-left: 50px;
+    }
+
+    .sukinakoto img ,.yattemitai img  {
+        width: 40%;
+    }
+
+    .renkun_sukinakoto h1 {
+        font-size: 16px;
+    }
+
+    .renkun_sukinakoto p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .renkun_sentense {
+        margin-left: 80px;
+    }
+
+    .renkun_sukinakoto {
+        margin-top: 80px;
+    }
+
+    .chikawa_sukinakoto {
+        margin-top: 0px;
+    }
+
+    .chikawa_sukinakoto p{
+        font-size: 14px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .trip_sukinakoto p ,.kunitting_yattemitai p {
+        font-size: 14px;
+    }
+    .gosyuin_yattemitai p{
+        margin-top: -40px;
+    margin-right: 30px;
+    }
+
+}
+
+@media(max-width:375px) {
+    .renkun_sentense {
+        margin-left: 60px;
+    }
+
+    .chikawa_sukinakoto img,
+    .trip_sukinakoto img ,.live_yattemitai img ,.kunitting_yattemitai img ,.gosyuin_yattemitai img {
+        width: 40%;
+        margin-top: 30px;
+    }
+    .sukinakoto_about{
+    background-image: url(../images/en_sp.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 300px;
+    }
+}
